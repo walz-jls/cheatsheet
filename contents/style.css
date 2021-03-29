@@ -5,6 +5,13 @@ body {
   font-family: Arial sans-serif;
 }
 
+p {
+  text-align: justify;
+}
+
+main {
+  background-color: WhiteSmoke;}
+
 table {
   width: 700px;
   border: 3px solid Navy;
@@ -45,8 +52,12 @@ main {
   padding-bottom:30px;
 }
 
+.site-footer {
+  background-color: SteelBlue;
+}
+
 .code {
-  font-family: "Fira Mono";
+  font-family: Courier;
   color: FireBrick;
 }
 

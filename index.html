@@ -8,7 +8,7 @@
   <body>
 
     <header>
-      <h1>HTML and CSS CheatSheet !</h1>
+      <h1>HTML and CSS CheatSheet</h1>
       <nav></nav>
     </header>
 
@@ -142,9 +142,9 @@
         <h2>CSS</h2>
         <h3>Generalities</h3>
         <p>CSS, short for Cascading Style Sheet, is a language used to change the appearence and disposition of content on a webpage.</p>
-        <p>While inline CSS Styling is possible directly in an html document, the preferred methode is to link to a dedicated stylesheet.</p>
-        <p>The syntax in this dedicated stylesheet is : selector { attribute : value of attribute}</p>
-        <p>Example : p {font-familiy: Helvetica} will change all paragraphs fonts to Helvetica.</p>
+        <p>While inline CSS Styling is possible directly in an html document, the preferred methode is to link to a dedicated stylesheet, using this html tag in the &lt;head&gt; : <span class="code">&lt;link href="path-to-cssfile" type="text/css" rel="stylesheet"/&gt;</span></p>
+        <p>The syntax in this dedicated stylesheet is : <span class="code">selector { attribute : value of attribute}</span></p>
+        <p>Example : <span class="code">p {font-familiy: Helvetica}</span> will change all paragraphs fonts to Helvetica.</p>
         <h3>CSS selectors</h3>
         <p>HTML content can be targeted for CSS styling using selectors. They are, by increasing order of specificity :</p>
         <table>
@@ -174,10 +174,10 @@
           </tbody>
         </table>
         <p>Selectors can be combined to :
-          <ul>
-            <li>target more specifically : <em>.main section</em> will target every main element that is child to a section element</li>
-            <li>target multiple elements: <em>h1,p,footer</em> will apply the same style to the p, h1 and footer elements</li>
-          </ul>
+        <ul>
+          <li>target more specifically : <span class="code">.main section {}</span> will target every main element that is child to a section element</li>
+          <li>target multiple elements: <span class="code">h1,p,footer {}</span> will apply the same style to the p, h1 and footer elements</li>
+        </ul>
       </section>
     </main>
 

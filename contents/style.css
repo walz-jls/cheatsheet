@@ -31,10 +31,24 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  border : 3px solid LightSteelBlue;
+}
+
+section{
+  border-bottom: 2px solid SteelBlue;
+  padding-bottom: 15px;
+}
+
 main {
   padding-bottom:30px;
 }
 
+.code {
+  font-family: "Fira Mono";
+  color: FireBrick;
+}
 
 
 .creds {

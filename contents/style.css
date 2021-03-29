@@ -1,0 +1,52 @@
+body {
+  background-color: white;
+  max-width: 960px;
+  margin: auto;
+  font-family: Arial sans-serif;
+}
+
+table {
+  width: 700px;
+  border: 3px solid Navy;
+  margin: auto;
+}
+
+th {
+  background-color: LightSteelBlue;
+  text-align: center;
+  padding: 3px;
+}
+
+td {
+  border-top: solid LightSteelBlue;
+  padding: 2.5px;
+}
+
+header {
+  background-color: SteelBlue;
+  padding: 3px;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  padding-bottom:30px;
+}
+
+
+
+.creds {
+  font-family: Helvetica;
+  color: #8f9491;
+  float: left;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.avatar {
+  width: 50px;
+  float: left;
+  box-shadow: 2px 2px 2px 0px #3F3F3F;
+}

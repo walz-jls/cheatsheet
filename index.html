@@ -14,17 +14,171 @@
 
     <section class="html">
       <h2>HTML</h2>
+      <h3>HMTL tags</h3>
       <ul>
-        <li>Semantic HTML Tags</li>
-        <li>Tables</li>
+        <li><h4>Standard HTML Tags</h4>
+          <table>
+            <thead>
+              <tr>
+                <td>Tag</td>
+                <td>Fonctionnality</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>!DOCTYPE html</td>
+                <td>Declare HTML document</td>
+              </tr>
+              <tr>
+                <td>html</td>
+                <td>Indicates beginning and end of html code</td>
+              </tr>
+              <tr>
+                <td>head</td>
+                <td>Encapsulates metadata (title, link to stylesheet,...)</td>
+              </tr>
+              <tr>
+                <td>body</td>
+                <td>Encapsulates content to be displayed in the browser</td>
+              </tr>
+              <tr>
+                <td>div</td>
+                <td>Division of content</td>
+              </tr>
+              <tr>
+                <td>img</td>
+                <td>Embeds image in webpage. <strong>Self-closing tag</strong></td>
+              </tr>
+              <tr>
+                <td>video, audio</td>
+                <td>Embeds media on webpage</td>
+              </tr>
+              <tr>
+                <td>p</td>
+                <td>paragraph</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li><h4>Semantic HTML tags</h4>
+          <p>Semantic HTML allows for better code readability and maintenance, as well as better parsing from search engines.</p>
+          <p>They are tags designed to cut the content into easy-to-identify pieces, and should be used in the body part of the html code.</p>
+          <table>
+            <thead>
+              <tr>
+                <td>Tag</td>
+                <td>Usage</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>header</td>
+                <td>Should contain the head of the webpage (title, main nav bar..)</td>
+              </tr>
+              <tr>
+                <td>nav</td>
+                <td>Used to identify a navigation menu</td>
+              </tr>
+              <tr>
+                <td>article</td>
+                <td>Used to identify an article (a part of a webpage that has meaning on its own, independant of the rest of the page.)</td>
+              </tr>
+              <tr>
+                <td>section</td>
+                <td>Used to section the webpage in different sections</td>
+              </tr>
+              <tr>
+                <td>aside</td>
+                <td>Used for content that should be presented next to the main content (highlight quote, sidebar,...)</td>
+              </tr>
+              <tr>
+                <td>footer</td>
+                <td>Used for footer of article or webpage (contact info, signature,...)</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+      </ul>
+      <h3>Tables</h3>
+      <p>Tables need to be declared using the &lt;table&gt; and &lt;/table&gt; tags.</p>
+      <table>
+        <thead>
+          <tr>
+            <td>Tag</td>
+            <td>Usage</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>thead</td>
+            <td>Identifies head of the table</td>
+          </tr>
+          <tr>
+            <td>tbody</td>
+            <td>Identifies actual content of the table</td>
+          </tr>
+          <tr>
+            <td>tr</td>
+            <td>Creates new row</td>
+          </tr>
+          <tr>
+            <td>td</td>
+            <td>Create new cell and fills it with data</td>
+          </tr>
+          <tr>
+            <td>tfoot</td>
+            <td>Identifies foot of the table</td>
+          </tr>
+        </tbody>
+      </table>
       </ul>
     </section>
 
     <section class="css">
       <h2>CSS</h2>
+      <h3>Generalities</h3>
+      <p>CSS, short for Cascading Style Sheet, is a language used to change the appearence and disposition of content on a webpage.</p>
+      <p>While inline CSS Styling is possible directly in an html document, the preferred methode is to link to a dedicated stylesheet.</p>
+      <p>The syntax in this dedicated stylesheet is : selector { attribute : value of attribute}</p>
+      <p>Example : p {font-familiy: Helvetica} will change all paragraphs fonts to Helvetica.</p>
+      <h3>CSS selectors</h3>
+      <p>HTML content can be targeted for CSS styling using selectors. They are, by increasing order of specificity :</p>
+      <table>
+        <thead>
+          <tr>
+            <td>Selector</td>
+            <td>Syntax</td>
+            <td>targeted HTML</td>
+          </tr>
+        <thead>
+        <tbody>
+          <tr>
+            <td>Type selector</td>
+            <td>h1{}, p{}, body{},...</td>
+            <td>General HTML tags : &lt;p&gt;,&lt;body&gt;,...</td>
+          </tr>
+          <tr>
+            <td>Class selector</td>
+            <td>.example{}, .main{},...</td>
+            <td>Attribute within html tag : &lt;div <strong>class="main"</strong>&gt;</td>
+          </tr>
+          <tr>
+            <td>Id selector</td>
+            <td>#id{}, #menu{},...</td>
+            <td>Id attribute within html tag : &lt;div <strong>id="menu"</strong>&gt;</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Selectors can be combined to :
+        <ul>
+          <li>target more specifically : <em>.main section</em> will target every main element that is child to a section element</li>
+          <li>target multiple elements: <em>h1,p,footer</em> will apply the same style to the p, h1 and footer elements</li>
+        </ul>
     </section>
 
     <footer>
+      <img src="./content/avatar.jpg" alt="" class="avatar"/>
+      <p class='creds'>Created by walz-jls</p>
     </footer>
 
   </body>
